@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "974fdb346cb3eb8c65351356f31154e4",
+    "content-hash": "ee9eebbe8a2a98ab15879e5544e2d6d0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1972,7 +1972,7 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
