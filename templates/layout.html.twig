@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block title 'Insurances '%}
+
+{% block body %}
+    <div class="container" id="main">
+        <div class="row" id="header_row">
+            {% block header %}
+                {#{ include('layout/header.html.twig') }#}
+                {#{ knp_menu_render('\Menu\Builder') }#}
+                <div class="nav nav-justified btn-block">
+                {{ knp_menu_render('userTopbar', {'currentClass': 'active'}) }}
+                </div>
+            {% endblock %}
+        </div>
+        <div class="row" id="body_row">
+            <div class="container" id="body_container">
+                <div class="row">
+                    <div class="col-md-4" id="nav_area">
+                        {% block nav %}
+                        {% endblock %}
+                    </div>
+                    <div class="col-md-8" id="content_area">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footer_row">
+            {% block footer %}
+                {#{ include('layout/footer.html.twig') }#}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

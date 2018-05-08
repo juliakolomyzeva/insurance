@@ -26,3 +26,12 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    app.menu_builder:
+        class: App\Menu\Menu
+
+    app.menu.usertopbar:
+        class: Knp\Menu\MenuItem
+        factory: ['@app.menu_builder', 'userTopbar']
+        tags:
+            - { name: knp_menu.menu, alias: userTopbar }

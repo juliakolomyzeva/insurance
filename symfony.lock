@@ -77,8 +77,17 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "knplabs/knp-menu": {
+        "version": "2.3.0"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v2.2.1"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "nikic/php-parser": {
+        "version": "v4.0.1"
     },
     "ocramius/proxy-manager": {
         "version": "2.1.1"

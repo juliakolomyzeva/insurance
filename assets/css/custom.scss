@@ -1,0 +1,63 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+.header_button a{
+  color: #fff;
+}
+
+.header_button{
+  @extend .col;
+  @extend .text-center;
+  @extend .text-light;
+  @extend .bg-secondary;
+  height: 30px;
+}
+
+.test_my{
+  background-image: url('../images/Schutz.jpg');
+}
+
+.nav.btn-block ul{
+  display: flex;
+  width: 100%;
+}
+.nav.btn-block ul li{
+  list-style: none;
+}
+.nav.btn-block ul.menu_level_1{
+   display: none;
+ }
+
+/* TOPMENU */
+
+.topmenu_dropdown{
+  @extend .col;
+  @extend .text-center;
+  @extend .text-light;
+  @extend .bg-secondary;
+}
+
+.topmenu_dropdown{
+  position: relative;
+}
+.topmenu_dropdown:hover ul.menu_level_1{
+  display: block;
+}
+.topmenu_dropdown ul.menu_level_1{
+  position: absolute !important;
+  right: 0;
+  z-index: 100;
+}
+.topmenu_dropdown ul.menu_level_1 li{
+  @extend .text-left;
+  padding-left: 20px;
+}
+
+/* FOS FORMS */
+
+#fos_user_registration_form div,
+#fos_user_resetting_reset div,
+.fos_user_resetting_request div {
+  display: grid;
+  margin-bottom: 1em;
+}
